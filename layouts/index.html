@@ -2,7 +2,11 @@
 <div id="home-jumbotron" class="jumbotron text-center">
     <h1 class="title">{{ .Site.Title }}</h1>
     <div height="500px" width="500px" class="container">
-        asdf
+        {{ range .Site.Menus.main }}
+        <div width="400px">
+            <button class="filled" type="button"> {{ .Name }} </button>
+        </div>
+        {{ end }}
     </div>
 </div>
 {{ end }}
