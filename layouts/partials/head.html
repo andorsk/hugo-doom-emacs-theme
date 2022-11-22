@@ -8,7 +8,7 @@
     <title>{{ $title }}</title>
 
     <!-- SCSS -->
-    {{ $sass := resources.Get "sass/main.scss" }}
+    {{ $sass := resources.Get "js/scss/main.scss" }}
     {{ $style := $sass | resources.ToCSS }}
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
