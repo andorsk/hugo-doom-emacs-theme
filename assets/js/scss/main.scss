@@ -5,11 +5,6 @@ body {
   color: $text-primary;
 }
 
-.secondary {
-  color: "orange";
-  background-color: "white";
-}
-
 .container {
   text-align: center;
 }
@@ -19,8 +14,8 @@ body {
 }
 
 .filled {
-  width: "500px";
-  height: "100%";
+  width: "100%";
+  display: inline-block;
 }
 
 .hidden {
@@ -29,12 +24,41 @@ body {
 
 .footer {
   position: fixed;
+  padding: 0px;
+  margin: 0px;
   bottom: 0%;
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: $background-secondary;
+  color: $text-primary;
 }
 
 .buffer {
   height: 300px;
+}
+
+.color-primary {
+  background-color: $background-primary;
+}
+
+.color-secondary {
+  background-color: $background-secondary;
+}
+
+.text_center {
+  text-align: center;
+  align: center;
+}
+
+.padded-text {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.float-right {
+  float: right;
+  text-align: right;
+}
+
+.float-left {
+  float: left;
 }
