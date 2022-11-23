@@ -9,5 +9,3 @@ function toggleBuffer() {
 function sendMessage(msg) {
   document.getElementById("message-buffer").innerText = msg;
 }
-
-sendMessage("hi");
