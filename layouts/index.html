@@ -4,9 +4,13 @@
     <div height="500px" width="500px" class="container">
         {{ range .Site.Menus.main }}
         <div width="400px">
-            <button class="filled" type="button"> {{ .Name }} </button>
+            <button class="filled depressed_button btn btn-dark" type="button"> {{ .Name }} </button>
         </div>
         {{ end }}
+    </div>
+    <div height="300px" style="height:300px; display:inline-block;"/>
+    <div class="color-grey" >
+        Andor loaded 0 packages across 0 modules in 0.13s
     </div>
 </div>
 {{ end }}
