@@ -1,6 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
+<div class="container color-secondary">
+    <a  class="btn btn-dark btn-link" href="/" role="button"> Home Me </a>
+    <h1>{{ .Title }}</h1>
+    {{ partial "metadata.html" . }}
+    <br><br>
+    <div class="px-md-3">
+        {{ .Content }}
+    </div>
+</div>
 {{ end }}
