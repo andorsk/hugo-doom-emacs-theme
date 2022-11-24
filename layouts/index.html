@@ -1,30 +1,27 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
+
+<div id="home-jumbotron" class="jumbotron text-center container">
     <div class="col-xs-12" style="height:150px;"></div>
-    <div class="ascii">
-    888
-    888
-    888
-.d88888 .d88b.  .d88b. 88888b.d88b.
-d88" 888d88""88bd88""88b888 "888 "88b
-888  888888  888888  888888  888  888
-Y88b 888Y88..88PY88..88P888  888  888
-"Y88888 "Y88P"  "Y88P" 888   888  888
+    <div class="ascii">__.---.-..-----..--|  |.-----..----.
+|  _  ||     ||  _  ||  _  ||   _|
+|___._||__|__||_____||_____||__|
     </div>
-    <h1 class="title">{{ .Site.Title }}</h1>
-    <div height="500px" width="500px" class="container">
+    <h3 class="title">{{ .Site.Title }}</h3>
+    <!-- <h1 class="title">{{ .Site.Title }}</h1> -->
+    <div class="container">
         {{ range .Site.Menus.main }}
-        <div>
-            <div>
-                <span class="text-left">
-                    Logo
-                </span>
-                <button class="depressed_button btn btn-dark" type="button"> {{ .Name }} </button>
-                <span class="text-right" >
-                    Shortcut
-                </span>
-            </div>
-        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto color-primary" >
+                {{ if .Pre }}
+                {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                {{ $icon }}
+                {{ end }}
+                {{ if .Pre }}
+                    {{ $text := print .Name | safeHTML }}
+                <a href="{{ .URL }}"><span class="btn  text-p clickable-row" style="text-align:left; padding-left:6px; width:300px;"> {{ $text }} </span></a>
+                {{ end }}
+              </div>
+          </div>
         {{ end }}
     </div>
     <div height="300px" style="height:300px; display:inline-block;"/>
