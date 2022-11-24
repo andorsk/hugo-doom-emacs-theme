@@ -11,6 +11,7 @@ function sendMessage(msg) {
 }
 
 document.addEventListener("keydown", (event) => {
+  console.log(event);
   switch (event.code) {
     case "KeyB":
       toggleBuffer();
@@ -18,8 +19,17 @@ document.addEventListener("keydown", (event) => {
     case "KeyH":
       toggleHelpModal();
       return;
+    case "Slash":
+      toggleHelpModal();
+      return;
+    case "KeyP":
+      redirect("/posts");
+      return;
+    case "KeyT":
+      redirect("/tags");
+      return;
     case "KeyM":
-      GoHome();
+      redirect("/");
       return;
   }
 });
@@ -33,6 +43,6 @@ function toggleHelpModal() {
   }
 }
 
-function GoHome() {
-  window.location.href = "/";
+function redirect(path) {
+  window.location.href = path;
 }
