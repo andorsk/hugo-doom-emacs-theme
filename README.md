@@ -11,6 +11,12 @@ binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
 2. git submodule add git@github.com:andorsk/emacsTheme.git
 3. change the theme in config.toml to emacsTheme `theme = "emacsTheme"`
 
+### Design Decisions
+
+- Allow someone to navigate entirely by keyboard. Always.
+- Should feel free
+- Non engineers should be able to use it as well.
+
 ### Customization
 
 #### Landing Page
