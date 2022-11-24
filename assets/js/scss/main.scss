@@ -183,3 +183,52 @@ h3:before {
   margin-left: auto;
   max-width: 800px; /* or 950px */
 }
+
+.mermaid {
+  margin-right: auto;
+  margin-left: auto;
+  align-text: center;
+  justify-content: center;
+}
+
+.mermaid {
+  & svg {
+    display: block;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  & .messageText {
+    fill: white !important;
+  }
+
+  & line {
+    fill: white !important;
+    stroke: white !important;
+    fill: white !important;
+  }
+
+  & markers {
+    fill: white !important;
+  }
+
+  & polygon {
+    fill: white !important;
+  }
+
+  & defs {
+    fill: white !important;
+  }
+
+  & path {
+    fill: white !important;
+  }
+
+  & .note {
+    fill: $hue1 !important;
+    stroke: none !important;
+    stroke-color: black !important;
+    stroke-width: 2px !important;
+  }
+}
