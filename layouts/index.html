@@ -24,8 +24,33 @@
               </div>
           </div>
         {{ end }}
+          <div class="row justify-content-md-center">
+              <div class="col col-md-auto color-primary" >
+                  Latest Posts
+              </div>
+          </div>
+
+        {{ range last 1 .Site.RegularPages }}
+          <div class="row justify-content-md-center">
+              <div class="col col-md-auto color-primary" >
+                  <a href="{{ .URL }}">
+                      <span class="btn  text-p clickable-row" style="text-align:left; padding-left:6px; width:300px;">
+                          {{ .Title }}
+                      </span>
+                  </a>
+               </div>
+              <div class="row justify-content-md-center color-grey" style="font-size: 1rem;">
+                  <small> {{ .PublishDate }} </small>
+              </div>
+          </div>
+        {{ end }}
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto color-primary" >
+                <b>Press 'h' for shortcuts</b>
+            </div>
+        </div>
     </div>
-    <div height="300px" style="height:300px; display:inline-block;"/>
+    <div height="300px" class="mt-5" style="height:300px; display:inline-block;"/>
     <div class="color-grey" >
         Andor loaded 0 packages across 0 modules in 0.13s
     </div>

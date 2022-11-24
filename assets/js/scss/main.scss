@@ -29,6 +29,10 @@ body {
   color: $text-primary;
 }
 
+.mw-800 {
+  max-width: 800px !important;
+}
+
 .text-p {
   color: $text-primary;
 }
@@ -168,4 +172,14 @@ h3:before {
   display: block;
   left: 0;
   top: 50%;
+}
+
+.summary {
+  display: block;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; /* or 950px */
 }
