@@ -156,3 +156,16 @@ body {
   min-height: 200px;
   background-color: red;
 }
+
+.text-normal {
+  color: white;
+}
+
+h3:before {
+  margin: 3px 0px;
+  border-bottom: 1px dotted #333333;
+  content: "";
+  display: block;
+  left: 0;
+  top: 50%;
+}
