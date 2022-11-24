@@ -22,11 +22,11 @@
             <tbody>
                 {{ range last 10 .Site.RegularPages }}
                 <tr class="text-primary clickable-row hover-highlight">
-                    <th class="text-white text-left" scope="row"> <a href="{{ .URL }}">{{ .Title }}</a></th>
-                    <td href="{{ .URL }}" class="text-secondary"> <a href="#">{{ .Keywords }}</a></td>
+                    <th class="text-white text-left" scope="row"> <a href="{{ .RelPermalink }}">{{ .Title }}</a></th>
+                    <td href="{{ .RelPermalink }}" class="text-secondary"> <a href="#">{{ .Keywords }}</a></td>
                         <td class="text-primary"><a href="#">{{ .Type }}</a></td>
                         <td class="text-primary"><a href="#">{{ .Kind }}</a></td>
-                        <td class="text-primary text-right"><a href="{{ .URL }}">{{ .URL }}</a></td>
+                        <td class="text-primary text-right"><a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a></td>
                     </tr>
                 {{end}}
             </tbody>

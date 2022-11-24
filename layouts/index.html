@@ -30,7 +30,7 @@
               </div>
           </div>
 
-        {{ range last 1 .Site.RegularPages }}
+        {{ range first 1 .Site.RegularPages }}
           <div class="row justify-content-md-center">
               <div class="col col-md-auto color-primary" >
                   <a href="{{ .URL }}">
