@@ -1,7 +1,30 @@
 # Hugo Emacs Theme
 
-A hugo theme inspired by Doom Emacs.
+A hugo theme inspired by Doom Emacs. It contains a doom like theme for hugo and
+binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
+
+![imgs/sample.gif](imgs/sample.gif)
+
+### Installation
+
+1. cd into your themes directory
+2. git submodule add git@github.com:andorsk/emacsTheme.git
+3. change the theme in config.toml to emacsTheme `theme = "emacsTheme"`
+
+### Customization
+
+#### Landing Page
+
+- **Params.art**: The ascii art on the landing page
+
+#### Styling
+
+- Check out main.scss and _variables.scss for styling._
 
 ### Reference
 
 ![imgs/sample.png](imgs/sample.png)
+
+### Contributions
+
+Feel free to send over a PR if you'd like to update this!
