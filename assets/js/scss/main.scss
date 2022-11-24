@@ -29,6 +29,10 @@ body {
   color: $text-primary;
 }
 
+.text-p {
+  color: $text-primary;
+}
+
 .buffer {
   height: 300px;
   width: 100%;
@@ -83,4 +87,72 @@ body {
 
 .color-grey {
   color: $color-grey;
+}
+
+#toggle-buffer {
+  cursor: pointer;
+}
+
+[data-href] {
+  cursor: pointer;
+}
+
+.clickable-row a {
+  display: block;
+}
+
+.hover-highlight:hover {
+  background-color: $highlight-blue !important;
+  background: $highlight-blue !important;
+  --bs-table-bg: $highlight-blue !important;
+  --bs-table-color: black !important;
+  color: black;
+}
+
+.clickable-row:hover {
+  background-color: $highlight-blue !important;
+  cursor: pointer;
+  --bs-table-bg: $highlight-blue !important;
+  --bs-table-color: black !important;
+  color: black;
+}
+
+table-dark {
+  & tr:hover {
+    --bs-table-bg: $highlight-blue !important;
+    --bs-table-color: black !important;
+    background-color: $highlight-blue !important;
+    color: black;
+  }
+}
+
+.no-decorate {
+  text-decoration: none;
+}
+
+tbody {
+  & a {
+    text-decoration: none;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+#content {
+  min-height: 100%;
+}
+
+#help-toggle {
+  cursor: pointer;
+  padding: 5px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: red;
 }

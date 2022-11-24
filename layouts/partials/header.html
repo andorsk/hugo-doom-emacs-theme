@@ -1,14 +1,23 @@
-<div id="nav-border" class="container">
-    <!-- <nav id="nav" class="nav justify-content-center">
-         {{ range .Site.Menus.main }}
-         <a class="nav-link" href="{{ .URL }}">
-         {{ if .Pre }}
-         {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-         {{ $icon }}
-         {{ end }}
-         {{ $text := print .Name | safeHTML }}
-         {{ $text }}
-         </a>
-         {{ end }}
-         </nav> -->
+<button type="button" onclick="toggleHelpModal()" class="btn btn-link btn-block px-md-3 position-absolute top-0 end-0 no-decorate" data-bs-toggle="modal" data-bs-target="#helpModal">
+    Help
+</button>
+
+<div class="modal" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="Help Dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center align-center" id="helpModalTitle">Shortcuts</h5>
+            </div>
+            <div class="modal-body">
+                <b>b</b> Open Buffer
+                <br>
+                <b>h</b> Open Help
+                <br>
+                <b>m</b> Go Home
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="toggleHelpModal()">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
