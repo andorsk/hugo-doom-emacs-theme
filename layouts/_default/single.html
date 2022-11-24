@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="container color-secondary">
-    <a  class="btn btn-dark btn-link" href="/" role="button"> Home Me </a>
-    <h1>{{ .Title }}</h1>
+<div class="container-fluid px-md-5 color-secondary text-normal" style="max-width:800px; width:800px">
+    <h2 class="title mt-5">{{ .Title }}</h2>
+    <hr>
     {{ partial "metadata.html" . }}
     <br><br>
     <div class="px-md-3">

@@ -29,6 +29,10 @@ body {
   color: $text-primary;
 }
 
+.mw-800 {
+  max-width: 800px !important;
+}
+
 .text-p {
   color: $text-primary;
 }
@@ -155,4 +159,27 @@ body {
   min-width: 200px;
   min-height: 200px;
   background-color: red;
+}
+
+.text-normal {
+  color: white;
+}
+
+h3:before {
+  margin: 3px 0px;
+  border-bottom: 1px dotted #333333;
+  content: "";
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
+.summary {
+  display: block;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; /* or 950px */
 }
