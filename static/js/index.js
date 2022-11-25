@@ -44,5 +44,5 @@ function toggleHelpModal() {
 }
 
 function redirect(path) {
-  window.location.href = path;
+  window.location.href = "{{ .Site.BaseURL }}" + path;
 }
