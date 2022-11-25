@@ -1,13 +1,29 @@
 {{ define "main" }}
-<div class="container  px-md-3 color-secondary" style="max-width: 800px;">
-  <h1>{{ .Title }}</h1>
+<div class="container px-md-3 color-secondary" style="max-width: 800px;">
+  <div class="row mt-5">
+    <div class="col col-md-6">
+         <h5>Post</h5>
+     </div>
+     <div class="col">
+         <h5>Metadata</h5>
+     </div>
+     <div class="col">
+         <h5>Notes</h5>
+     </div>
+  </div>
   {{ range .Pages.ByPublishDate.Reverse }}
     <p>
-        <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        {{ partial "metadata.html" . }}
-        <a class="summary" href="{{ .RelPermalink }}">
-            <p>{{ .Summary }}</p>
-        </a>
+        <div class="row" style="">
+            <div class="col col-md-6">
+                <h5><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+            </div>
+            <div class="col">
+                {{ partial "metadata.html" . }}
+            </div>
+            <div class="col">
+                {{ .Description }}
+            </div>
+        </div>
     </p>
   {{ end }}
 </div>
