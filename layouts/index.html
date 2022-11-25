@@ -7,9 +7,16 @@
 |___._||__|__||_____||_____||__|
     </div>
     {{ .Site.Title }}
+    <div class="row text-small justify-content-md-center ">
+        <div class="col col-md-auto color-grey" >
+            <small>{{ .Site.Params.caption | safeHTML }}</small>
+        </div>
+    </div>
+
+
     <!-- <h4 class="title">{{ .Site.Title }}</h4> -->
     <!-- <h1 class="title">{{ .Site.Title }}</h1> -->
-    <div class="container">
+    <div class="container mt-3">
         {{ range .Site.Menus.main }}
         <div class="row justify-content-md-center">
             <div class="col col-md-auto color-primary" >
@@ -18,21 +25,22 @@
                 {{ $icon }}
                 {{ end }}
                 {{ if .Pre }}
-                    {{ $text := print .Name | safeHTML }}
-                <a href="{{ .URL }}"><span class="btn  text-p clickable-row" style="text-align:left; padding-left:6px; width:300px;"> {{ $text }} </span></a>
+                {{ $text := print .Name | safeHTML }}
+                <a href="{{ .URL }}"><span class="btn  text-p clickable-row" style="text-align:center; padding-left:6px; width:300px;"> {{ $text }} </span></a>
                 {{ end }}
               </div>
           </div>
         {{ end }}
           <div class="row justify-content-md-center">
               <div class="col col-md-auto color-primary" >
-                  Latest Post
               </div>
           </div>
 
         {{ range first 1 .Site.RegularPages }}
           <div class="row justify-content-md-center">
               <div class="col col-md-auto color-primary" >
+
+                <b>Latest Post: </b>
                   <a href="{{ .RelPermalink }}">
                       <span class="btn  text-p clickable-row" style="text-align:center; padding-left:6px; width:300px;">
                           {{ .Title }}

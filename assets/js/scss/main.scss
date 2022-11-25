@@ -231,6 +231,12 @@ h3:before {
     stroke-color: black !important;
     stroke-width: 2px !important;
   }
+
+  & .cluster {
+    rect {
+      fill: white !important;
+    }
+  }
 }
 
 blockquote {
