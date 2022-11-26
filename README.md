@@ -21,6 +21,15 @@ binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
 
 ##### mermaid support
 
+This:
+
+```text
+graph TD
+    A --> B
+```
+
+Converts to:
+
 ```mermaid
 graph TD
     A --> B
@@ -52,3 +61,11 @@ If you type in: \$a+b=3\$ you'll get a render of it with MathJax.
 ### Contributions
 
 Feel free to send over a PR if you'd like to update this!
+
+```
+
+```
+
+```
+
+```
