@@ -5,6 +5,10 @@ binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
 
 ![imgs/sample.gif](imgs/sample.gif)
 
+### Demo
+
+You can see my blog [here](https://andorsk.github.io/blog) using this theme.
+
 ### Installation
 
 1. cd into your themes directory
