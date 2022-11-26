@@ -1,5 +1,8 @@
-$primary: #6aade9;
+$blue1: #6aade9;
+
+$primary: $blue1;
 $secondary: "orange";
+$biege-1: #cc9999;
 
 $background-primary: #333333;
 $background-secondary: #22242a;
@@ -15,3 +18,7 @@ $color-grey: grey;
 $highlight-blue: #6aade9;
 
 $hue1: #cc9999;
+$warning-1: $biege-1;
+$info: $primary;
+
+$highlight-1: $blue1;

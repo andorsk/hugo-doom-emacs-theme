@@ -266,6 +266,20 @@ blockquote p {
   & .label {
     color: grey;
   }
+  & li {
+    list-style: none; /* Remove default bullets */
+  }
+  & ol {
+    counter-reset: item;
+    & li {
+      display: block;
+    }
+    & li::before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: $highlight-1;
+    }
+  }
 }
 
 .theorem {
@@ -277,4 +291,14 @@ blockquote p {
 
 .equation {
   text-align: center !important;
+}
+
+.todo {
+  display: block;
+  background-color: $warning-1;
+  color: black;
+  text-align: center;
+  & .label {
+    color: grey;
+  }
 }
