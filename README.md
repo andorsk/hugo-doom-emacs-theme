@@ -17,7 +17,25 @@ binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
 - Should feel free
 - Non engineers should be able to use it as well.
 
-### Customization
+### Features
+
+##### mermaid support
+
+```mermaid
+graph TD
+    A --> B
+```
+
+##### MathJax support
+
+If you type in: \$a+b=3\$ you'll get a render of it with MathJax.
+
+##### Custom Blocks
+
+- blockquote
+- mermaid
+- definition
+- theoreom
 
 #### Landing Page
 

@@ -189,9 +189,7 @@ h3:before {
   margin-left: auto;
   align-text: center;
   justify-content: center;
-}
 
-.mermaid {
   & svg {
     display: block;
     justify-content: center;
@@ -199,30 +197,22 @@ h3:before {
     margin-left: auto;
   }
 
+  & marker {
+    fill: white !important;
+  }
+
   & .messageText {
     fill: white !important;
   }
 
   & line {
-    fill: white !important;
     stroke: white !important;
-    fill: white !important;
   }
 
-  & markers {
-    fill: white !important;
-  }
-
-  & polygon {
-    fill: white !important;
-  }
-
-  & defs {
-    fill: white !important;
-  }
-
-  & path {
-    fill: white !important;
+  & .node {
+    & rect {
+      fill: white !important;
+    }
   }
 
   & .note {
@@ -237,6 +227,27 @@ h3:before {
       fill: white !important;
     }
   }
+
+  & .edgePaths {
+    & path {
+      stroke: white !important;
+      fill: none !important;
+    }
+  }
+
+  & .flowchart-link {
+    stroke: white !important;
+  }
+
+  & .edgeLabels {
+    & .edgeLabel {
+      color: white !important;
+      background-color: $background-primary !important;
+    }
+    & .label {
+      fill: none !important;
+    }
+  }
 }
 
 blockquote {
@@ -248,4 +259,22 @@ blockquote {
 
 blockquote p {
   display: inline;
+}
+
+.definition {
+  background-color: $background-highlight1;
+  & .label {
+    color: grey;
+  }
+}
+
+.theorem {
+  background-color: $background-highlight1;
+  & .label {
+    color: grey;
+  }
+}
+
+.equation {
+  text-align: center !important;
 }
