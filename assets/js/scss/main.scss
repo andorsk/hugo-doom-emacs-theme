@@ -215,6 +215,10 @@ h3:before {
     }
   }
 
+  & .nodeLabel {
+    color: $node-label-color !important;
+  }
+
   & .note {
     fill: $hue1 !important;
     stroke: none !important;
@@ -224,7 +228,7 @@ h3:before {
 
   & .cluster {
     rect {
-      fill: white !important;
+      fill: $rectangle_fill !important;
     }
   }
 
@@ -300,5 +304,13 @@ blockquote p {
   text-align: center;
   & .label {
     color: grey;
+  }
+}
+
+.note {
+  border-left: 1px solid $background-highlight2;
+  & .label {
+    border-radius: 25px;
+    background: #73ad21;
   }
 }

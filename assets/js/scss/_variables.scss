@@ -3,10 +3,12 @@ $blue1: #6aade9;
 $primary: $blue1;
 $secondary: "orange";
 $biege-1: #cc9999;
+$biege-2: #f3efe0;
 
 $background-primary: #333333;
 $background-secondary: #22242a;
 $background-highlight1: #333333;
+$background-highlight2: $biege-1;
 
 $text-primary: #6aade9;
 $text-secondary: #cc9999;
@@ -22,3 +24,6 @@ $warning-1: $biege-1;
 $info: $primary;
 
 $highlight-1: $blue1;
+
+$rectangle_fill: #282a3a;
+$node-label-color: #393e46;
