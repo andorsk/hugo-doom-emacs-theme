@@ -197,6 +197,12 @@ h3:before {
     margin-left: auto;
   }
 
+  & .cluster {
+    & .nodeLabel {
+      color: white !important;
+    }
+  }
+
   & marker {
     fill: white !important;
   }
@@ -295,6 +301,14 @@ blockquote p {
 
 .equation {
   text-align: center !important;
+}
+
+table {
+  & .center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .todo {
