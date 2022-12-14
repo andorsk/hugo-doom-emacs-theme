@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
 **Status**: Work in Progess. It works, but there's a lot of tweaking/improvements to do. Recommended to not use in production yet.
-**Known Issues: ** See [here](#issues) for known issues.
+**Known Issues:** See [here](#issues) for known issues.
 
 A hugo theme inspired by Doom Emacs. It contains a doom like theme for hugo and
 binds some shortcuts to the browser, such as `?` will bring up a shortcut menu. 
@@ -30,6 +30,17 @@ You can see my blog [here](https://andorsk.github.io/blog) using this theme.
 - Personally and selfishly, I basically run my life on emacs at this point. I
   wanted to visit my writing and notes on a blog that made it feel like I was
   still in emacs, even when I wasn't.
+
+### Keyboard Bindings
+
+| Key | Action      | Key |   Action    |
+|-----|-------------|-----| ------------|
+| b   | Open Buffer | ?   | Open Help   |
+| m   | Go Home     | p   | Go To Posts |
+| t   | Go to Tags  | k   | Scroll Up   |
+| j   | Scroll Down | g   | Scroll to Top of Page |
+| G   | Scroll to Bottom of Page |  Ctrl + d | Scoll Down Half a Page |
+|  Ctrl + u | Scoll Up Half a Page | Enter | Select |
 
 ### Features
 
