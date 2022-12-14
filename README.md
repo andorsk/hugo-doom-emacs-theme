@@ -1,7 +1,12 @@
 # Hugo Emacs Theme
 
+**Status**: Work in Progess
+
 A hugo theme inspired by Doom Emacs. It contains a doom like theme for hugo and
-binds some shortcuts to the browser, such as `?` will bring up a shortcut menu.
+binds some shortcuts to the browser, such as `?` will bring up a shortcut menu. 
+
+The goal of this theme is to be able to navigate most of the website via keyboard 
+bindings as well as through the standard mouse shortcuts.
 
 ![imgs/sample.gif](imgs/sample.gif)
 
@@ -25,6 +30,8 @@ You can see my blog [here](https://andorsk.github.io/blog) using this theme.
   still in emacs, even when I wasn't.
 
 ### Features
+
+This theme features a bunch of additional in-build support.
 
 ##### mermaid support
 
