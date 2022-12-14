@@ -1,7 +1,8 @@
 # Hugo Emacs Theme
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 **Status**: Work in Progess. It works, but there's a lot of tweaking/improvements to do. Recommended to not use in production yet.
-**Known Issues** See [here](#issues) for known issues.
+**Known Issues: ** See [here](#issues) for known issues.
 
 A hugo theme inspired by Doom Emacs. It contains a doom like theme for hugo and
 binds some shortcuts to the browser, such as `?` will bring up a shortcut menu. 
