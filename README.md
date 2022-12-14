@@ -1,6 +1,6 @@
 # Hugo Emacs Theme
 
-**Status**: Work in Progess
+**Status**: Work in Progess. It works, but there's a lot of tweaking/improvements to do. Recommended to not use in production yet.
 
 A hugo theme inspired by Doom Emacs. It contains a doom like theme for hugo and
 binds some shortcuts to the browser, such as `?` will bring up a shortcut menu. 
@@ -67,6 +67,10 @@ If you type in: \$a+b=3\$ you'll get a render of it with MathJax.
 #### Styling
 
 - Check out main.scss and _variables.scss for styling._
+
+### Issues
+
+See the [here](https://github.com/andorsk/emacsTheme/issues) for known issues.
 
 ### Reference
 
