@@ -20,8 +20,8 @@ You can see my blog [here](https://andorsk.github.io/blog) using this theme.
 ### Installation
 
 1. cd into your themes directory
-2. git submodule add git@github.com:andorsk/emacsTheme.git
-3. change the theme in config.toml to emacsTheme `theme = "emacsTheme"`
+2. git submodule add git@github.com:andorsk/hugo-doom-emacs-theme.git
+3. change the theme in config.toml to hugo-doom-emacs-theme `theme = "hugo-doom-emacs-theme"`
 
 ### Design Decisions
 
@@ -84,7 +84,7 @@ If you type in: \$a+b=3\$ you'll get a render of it with MathJax.
 
 ### Issues
 
-See the [here](https://github.com/andorsk/emacsTheme/issues) for known issues.
+See the [here](https://github.com/andorsk/hugo-doom-emacs-theme/issues) for known issues.
 
 ### Reference
 
