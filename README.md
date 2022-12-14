@@ -1,5 +1,5 @@
 # Hugo Emacs Theme
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
 **Status**: Work in Progess. It works, but there's a lot of tweaking/improvements to do. Recommended to not use in production yet.
 **Known Issues: ** See [here](#issues) for known issues.
